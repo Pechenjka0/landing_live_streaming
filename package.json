@@ -1,0 +1,23 @@
+{
+  "name": "landing_live_streaming",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pechenjka0/landing_live_streaming.git"
+  },
+  "author": "Pechenjka0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pechenjka0/landing_live_streaming/issues"
+  },
+  "homepage": "https://github.com/Pechenjka0/landing_live_streaming#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "sass": "^1.81.0"
+  }
+}
