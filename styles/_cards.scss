@@ -123,10 +123,43 @@
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 8px 20px 12px rgba(0,0,0,.15), inset 0 -5px 70px 25px rgba(0, 0, 0, .2);
+        box-shadow: 0 8px 20px 12px rgba(0, 0, 0, .15), inset 0 -5px 70px 25px rgba(0, 0, 0, .2);
     }
 
     @media (max-width: v.$media_min) {
         width: 300px;
+    }
+}
+
+.wave-card {
+    width: 500px;
+    height: 275px;
+    background: url('../images/testimonials/wave-card-bg.svg') center/contain no-repeat;
+
+    @include m.d-flex(start, start, nowrap, column, 0, 35px);
+
+    &__avatar {
+        margin: 30px 0 0 45px;
+        border-radius: 50%;
+    }
+
+    &__quote {
+        margin: 0 42px 0 40px;
+        @include m.font(20px, 400, v.$color-white);
+        line-height: 1.4;
+    }
+
+    @media (max-width: v.$media_md) {
+        width: 330px;
+        row-gap: 15px;
+        background: url('../images/testimonials/wave-card-bg.svg') 50% 0 / contain no-repeat;
+
+        &__avatar {
+            margin: 25px 0 0 25px;
+        }
+
+        &__quote {
+            @include m.font(13px, 400, v.$color-white);
+        }
     }
 }
