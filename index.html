@@ -219,7 +219,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section" aria-label="testimonials section">
+        <section class="testimonials-section none" aria-label="testimonials section">
             <div class="container">
                 <div class="testimonials">
                     <h2 class="testimonials__title">
@@ -260,6 +260,27 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="form-section" aria-label="form section">
+            <div class="container">
+                <div class="form-section__wrapper">
+                    <form action="mailto:streaming_company@mail.ru" class="form" aria-labelledby="form-title">
+                        <label for="input-name" id="form-title" class="form__title">Ready to get started? Drop us a
+                            line!</label>
+                        <input class="form__name" id="input-name" type="text" placeholder="Name" aria-required="true"
+                            required>
+                        <input class="form__email" id="input-email" type="email" placeholder="Email"
+                            aria-required="true" required>
+                        <input class="form__text" id="input-text" type="text" placeholder="What we can do for you?"
+                            aria-required="true" required>
+
+                        <button type="submit" class="form__submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form-section__bg-cloud cloud--left"></div>
+            <div class="form-section__bg-cloud cloud--right"></div>
         </section>
     </main>
 </body>
